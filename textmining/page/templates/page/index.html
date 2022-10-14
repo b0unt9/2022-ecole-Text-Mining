@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>iPhone</title>
+</head>
+
+<body>
+    <!-- https://stackoverflow.com/questions/902034/how-can-i-check-the-size-of-a-collection-within-a-django-template -->
+    <h2>Positive ({{ positive|length }})</h2>
+    <div>
+        {% for item in positive %}
+        <p>{{ item }}</p>
+        {% endfor %}
+    </div>
+    <h2>Negative ({{ negative|length }})</h2>
+    <div>
+        {% for item in negative %}
+        <p>{{ item }}</p>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
